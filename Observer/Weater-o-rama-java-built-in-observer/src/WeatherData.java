@@ -1,9 +1,10 @@
 import Interfaces.Observer;
-import Interfaces.Observable;
+import Interfaces.Subject;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
-public class WeatherData implements Observable {
+public class WeatherData extends Observable {
     ArrayList<Observer> observers;
     public float temperature;
     public float pressure;
